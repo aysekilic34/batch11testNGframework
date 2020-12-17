@@ -1,5 +1,6 @@
 package com.techproed.tests;
 
+import com.github.javafaker.Faker;
 import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -73,6 +74,9 @@ public class D17_CreateHotel extends TestBase {
         Assert.assertEquals(otelOlusturulduYazisi,"Hotel was inserted successfully");
         //10. OK butonuna tıklayın.
         driver.findElement(By.xpath("//*[text()='OK']")).click();
+
+
+
     }
 }
 

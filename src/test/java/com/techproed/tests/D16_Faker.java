@@ -27,7 +27,7 @@ public class D16_Faker extends TestBase {
         Faker faker=new Faker();
         String email=faker.internet().emailAddress();
         actions.click(isimKutusu)
-                .sendKeys(faker.name().firstName())
+                .sendKeys(faker.name().username())
                 .sendKeys(Keys.TAB)
                 .sendKeys(faker.name().lastName())
                 .sendKeys(Keys.TAB)
