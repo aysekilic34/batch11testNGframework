@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GlbSignUpTest {
-    @Test
+    @Test (groups = "grup1")
     public void girisTesti(){
         Driver.getDriver().get(ConfigReader.getProperty("gb_url"));
         GlbSignUpPage glbSignUpPage=new GlbSignUpPage();

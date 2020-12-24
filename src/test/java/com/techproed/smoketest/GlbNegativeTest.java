@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class GlbNegativeTest {
 
-    @Test
+    @Test (groups = "grup1")
     public void yanlisMail() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("gb_url"));
         GlbHomePage glbHomePage=new GlbHomePage();
@@ -24,7 +24,7 @@ public class GlbNegativeTest {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = {"grup1","grup2"})
     public void yanlisPassword() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("gb_url"));
         GlbHomePage glbHomePage=new GlbHomePage();
@@ -38,7 +38,7 @@ public class GlbNegativeTest {
    Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = {"grup2","grup3"})
     public void yanlisMailPassword() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("gb_url"));
         GlbHomePage glbHomePage=new GlbHomePage();

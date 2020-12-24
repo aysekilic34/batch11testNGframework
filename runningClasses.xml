@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="birden fazla class calıstırma">
+    <test name="ikinci test">
+        <classes>
+            <class name="com.techproed.tests.D12_Alerts"></class>
+            <class name="com.techproed.tests.D14_MouseActions1"></class>
+            <class name="com.techproed.tests.D10_DropDownHomework"></class>
+        </classes>
+    </test>
+</suite>
